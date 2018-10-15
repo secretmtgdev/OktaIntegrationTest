@@ -7,6 +7,7 @@ const mongoose = require('mongoose');
 const app = express();
 const PORT = 3000;
 const users = require('./routes/users');
+const foods = require('./routes/foods');
 const config = require('./config/database');
 
 // connect to the database 
@@ -20,6 +21,9 @@ mongoose.connection.on('error', (err) => {
 
 // Enable api calls from different domains
 app.use(cors());
+app.use(passport.initialize());
+app.use(passport.session());
+require('./config/passport')(passport);
 
 // Allows for the parsing of data objects passed along routes
 app.use(bodyParser.json());
@@ -41,3 +45,4 @@ app.get('/', (req, res) => {
 /// SPECIAL ROUTES ///
 //////////////////////
 app.use('/users', users);
+app.use('/foods', foods);
