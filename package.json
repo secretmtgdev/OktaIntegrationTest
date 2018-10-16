@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/secretmtgdev/OktaIntegrationTest/issues"
   },
-  "homepage": "https://github.com/secretmtgdev/OktaIntegrationTest#readme"
+  "homepage": "https://github.com/secretmtgdev/OktaIntegrationTest#readme",
+  "devDependencies": {
+    "@angular/cli": "^6.2.5"
+  }
 }

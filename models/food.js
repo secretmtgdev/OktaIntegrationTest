@@ -25,7 +25,7 @@ const FoodSchema = mongoose.Schema({
         required: true
     }, 
     hash: {
-        type: number,
+        type: Number,
         required: false
     }
 });
