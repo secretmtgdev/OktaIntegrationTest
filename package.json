@@ -8,12 +8,13 @@
     "start": "node app"
   },
   "dependencies": {
-    "express": "*",
-    "mongoose": "*",
+    "@okta/okta-angular": "^1.0.4",
     "bcryptjs": "*",
-    "cors": "*",
-    "jsonwebtoken": "*",
     "body-parser": "*",
+    "cors": "*",
+    "express": "*",
+    "jsonwebtoken": "*",
+    "mongoose": "*",
     "passport": "*",
     "passport-jwt": "*"
   },
@@ -28,6 +29,10 @@
   },
   "homepage": "https://github.com/secretmtgdev/OktaIntegrationTest#readme",
   "devDependencies": {
-    "@angular/cli": "^6.2.5"
+    "@angular/cli": "^6.2.5",
+    "@angular/common": "^6.1.10",
+    "@angular/core": "^6.1.10",
+    "@angular/platform-browser": "^6.1.10",
+    "@angular/router": "^6.1.10"
   }
 }

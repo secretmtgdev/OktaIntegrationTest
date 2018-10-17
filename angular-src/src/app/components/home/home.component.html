@@ -1,0 +1,6 @@
+<div class="jumbostron text-center">
+  <h1>Okta Integration Application</h1>
+  <p class="lead">Welcome to this test page</p>
+</div>
+<button *ngIf="!isAuthenticated" (click)="login()">login</button>
+<button *ngIf="isAuthenticated" (click)="logout()"></button>
